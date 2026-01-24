@@ -291,6 +291,85 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==================
+   STORY SECTIONS
+   ================== */
+.story {
+    padding: 80px 0;
+    background: var(--bg-white);
+}
+
+.story + .story {
+    padding-top: 40px;
+}
+
+.story-alt {
+    background: var(--bg-light);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    align-items: start;
+}
+
+.story-grid.reverse .story-content {
+    order: 2;
+}
+
+.story-grid.reverse .story-media {
+    order: 1;
+}
+
+@media (max-width: 768px) {
+    .story-grid.reverse .story-content {
+        order: 1;
+    }
+
+    .story-grid.reverse .story-media {
+        order: 2;
+    }
+}
+
+.story-content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.story-title {
+    font-size: 32px;
+    color: var(--text-dark);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.story-text {
+    font-size: 16px;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+.story-media {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.story-media img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    max-height: 280px;
+    border-radius: 14px;
+    box-shadow: var(--shadow-md);
+    object-fit: cover;
+}
+
+/* ==================
    FEATURED SECTION
    ================== */
 .featured {
@@ -343,6 +422,8 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
     border: 1px solid var(--border-light);
+    display: flex;
+    flex-direction: column;
 }
 
 .article-card:hover {
@@ -385,6 +466,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .article-content {
     padding: 28px;
+    flex: 1;
 }
 
 .article-title {
@@ -403,7 +485,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .article-link {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 8px;
     color: var(--primary);
@@ -411,6 +493,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-size: 14px;
     transition: var(--transition);
+    padding: 0 28px 28px 28px;
 }
 
 .article-link svg {
