@@ -22,6 +22,9 @@
                     </div>
                 </div>
                 <nav class="nav">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="products.html" class="nav-link">Productos</a>
+                    <a href="contact.html" class="nav-link">Contacto</a>
                     <a href="https://debandera.com/es/" class="btn-shop">Tienda Online</a>
                 </nav>
             </div>
@@ -36,15 +39,67 @@
         </div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Embutidos Artesanales</h1>
-                <p class="hero-description">Tradición murciana en cada producto. Elaboramos con dedicación y experiencia los mejores embutidos artesanales desde Mula, Murcia.</p>
-                <div class="certifications">
-                    <div class="cert-logo">
-                        <img src="images/ifs.png" alt="Certificación IFS Global Markets Food" class="cert-logo-large">
+                <div class="hero-main">
+                    <h1 class="hero-title">Embutidos DeBandera</h1>
+                    <p class="hero-subtitle">Tradición murciana en cada producto. Elaboración artesanal en Mula (Murcia).</p>
+                    
+                    <div class="hero-description">
+                        <p>En DeBandera elaboramos embutidos artesanales con recetas tradicionales y un compromiso total con la calidad.</p>
+                        
+                        <p>Nacemos en Murcia, cuidamos el proceso como se ha hecho siempre y trabajamos para ofrecer un sabor auténtico, intenso y reconocible.</p>
+                        
+                        <p>Cada pieza que sale de nuestras instalaciones representa nuestra forma de entender el producto: <strong>tradición, experiencia y calidad constante.</strong></p>
                     </div>
-                    <div class="cert-logo">
+                </div>
+
+                <div class="hero-aside">
+                    <div class="hero-card">
+                        <div class="hero-card-header">
+                            <h3>¿Eres profesional?</h3>
+                            <p>Si eres profesional y quieres distribuir DeBandera, tenemos un apartado específico para ti.</p>
+                        </div>
+                        <div class="hero-card-footer">
+                            <a href="contact.html" class="btn-card-primary">
+                                Soy profesional / Distribuidor
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Section -->
+    <section class="quality">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestra Calidad</h2>
+                <p class="section-description">Certificaciones y compromisos con la excelencia y la seguridad alimentaria</p>
+            </div>
+            <div class="quality-grid">
+                <div class="quality-card">
+                    <div class="quality-badge">
+                        <img src="images/ifs.png" alt="Certificación IFS Global Markets Food">
+                    </div>
+                    <h3 class="quality-title">Certificación IFS</h3>
+                    <p class="quality-text">Certificación Internacional de Estándares en Seguridad Alimentaria</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-badge">
                         <img src="images/artesania.png" alt="Sello Artesanía">
                     </div>
+                    <h3 class="quality-title">Producto Artesanal</h3>
+                    <p class="quality-text">Elaborado con métodos tradicionales y dedicación artesanal</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-badge">
+                        <img src="images/alergenos.png" alt="Sin Alérgenos">
+                    </div>
+                    <h3 class="quality-title">Sin Alérgenos</h3>
+                    <p class="quality-text">Productos elaborados sin alérgenos mayores de forma responsable</p>
                 </div>
             </div>
         </div>
@@ -84,11 +139,27 @@
     <section class="featured">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Noticias</span>
                 <h2 class="section-title">Destacados en Medios</h2>
                 <p class="section-description">Nuestra trayectoria y compromiso reconocidos por los principales medios de comunicación</p>
             </div>
             <div class="articles-grid">
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="images/equipo.webp" alt="Visita institucional a Embutidos De Bandera">
+                        <span class="article-tag">Prensa</span>
+                    </div>
+                    <div class="article-content">
+                        <h3 class="article-title">Visita Institucional a Embutidos De Bandera</h3>
+                        <p class="article-excerpt">Referente artesanal y motor del tejido agroalimentario de Mula reconocido por las autoridades locales.</p>
+                    </div>
+                    <a href="https://wp.me/pa9DMY-fMt" target="_blank" class="article-link">
+                        <span>Leer artículo completo</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </article>
+
                 <article class="article-card">
                     <div class="article-image">
                         <img src="https://estaticos-cdn.prensaiberica.es/clip/ece85be5-6669-41be-b257-5945fb080d47_16-9-aspect-ratio_default_0.webp" alt="Trabajar con Carrefour">
@@ -99,23 +170,6 @@
                         <p class="article-excerpt">"Trabajar con Carrefour da una gran visibilidad a nuestros productos", afirma Mateo Baños Hernández.</p>
                     </div>
                     <a href="https://www.laopiniondemurcia.es/comunidad/2020/06/09/trabajar-carrefour-da-gran-visibilidad-34849368.html" target="_blank" class="article-link">
-                        <span>Leer artículo completo</span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                </article>
-
-                <article class="article-card">
-                    <div class="article-image">
-                        <img src="images/stand.jpg" alt="Morcón DeBandera en Lidl">
-                        <span class="article-tag">Colaboración</span>
-                    </div>
-                    <div class="article-content">
-                        <h3 class="article-title">El Morcón Murciano DeBandera en Lidl</h3>
-                        <p class="article-excerpt">Lidl introduce en su red de establecimientos nuestro embutido artesanal sin colorantes.</p>
-                    </div>
-                    <a href="https://murciaeconomia.com/archive/36530/el-morcon-murciano-debandera-mete-cabeza-en-lidl" target="_blank" class="article-link">
                         <span>Leer artículo completo</span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -139,6 +193,8 @@
                         </svg>
                     </a>
                 </article>
+            </div>
+            <div class="featured-cta">
             </div>
         </div>
     </section>
